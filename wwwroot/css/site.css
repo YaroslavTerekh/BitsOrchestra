@@ -1,0 +1,97 @@
+header {
+    padding: 2vh;
+    background-color: #cfcfcf;
+    display: flex !important;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2vh;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+ul li {
+    position: relative;
+    font-size: 1.8vh;
+    list-style: none;
+    cursor: pointer;
+}
+
+
+.nav-list ul {
+    display: flex;
+    align-items: center;
+}
+
+.upload {
+    padding: 1vh;
+    margin-right: 1vh !important;
+    background-color: #3646c2;
+    color: #fff !important;
+    border-radius: 10%;
+    transition: .2s;
+}
+
+    .upload:hover {
+        background-color: #303e96;
+        transition: .2s;        
+    }
+
+.contact-input {
+    border: 1px solid #c8c8c8;
+    padding: 1vh;
+}
+
+.edit {
+    text-align: center;
+    margin-top: 1vh !important;
+    width: fit-content;
+    padding: 1vh;
+    background-color: #1d6690;
+    border-radius: 10%;
+    color: #fff;
+    transition: .2s;
+}
+
+        .edit:hover {
+            background-color: #303da5;
+            transition: .2s;
+        }
+    
+    .modify div input {
+        border: 1px solid gray;
+    }
+
+    .modify div p {
+        font-size: 2vh;
+        font-weight: 600;
+    }
+
+.delete {
+    margin-top: 1vh !important;
+    width: fit-content;
+    padding: 1vh;
+    background-color: #ac2222;
+    border-radius: 10%;
+    color: #fff !important;
+    transition: .2s;
+}
+
+    .delete:hover {
+        background-color: #a11d1d;
+        transition: .2s;
+    }
+
+.contact-link {
+    text-decoration: underline !important;
+    color: #111b2a !important;
+}
+
+.table {
+    width: 100% !important;
+}
+
+tbody {
+    width: 100% !important;
+}

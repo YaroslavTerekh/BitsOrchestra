@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/ContactManager.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/style-reset.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="//cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <header>
+        <p class="logo">Contact manager</p>
+        <nav class="nav-list">
+            <ul>
+                <li>@Html.ActionLink("Upload CVS", "CreateContact", "Home", null, new { @class = "upload" })</li>
+                <li>@Html.ActionLink("Contacts", "Index", "Home", null, null)</li>
+            </ul>
+        </nav>
+    </header>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="//cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.datatables.net/plug-ins/1.13.3/sorting/custom-data-source/dom-text.js"></script>
+    <section class="content">
+        @RenderBody()
+    </section>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

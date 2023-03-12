@@ -1,0 +1,10 @@
+﻿@model UploadCSV
+
+<h1 style="font-size: 2.5vh; border-bottom: 1px solid #000; padding: 2vh !important;">Upload your contacts via .CSV file</h1>
+@using(Html.BeginForm("CreateContact", "Home", FormMethod.Post, new { enctype="multipart/form-data" }))
+{
+    @Html.EditorFor(t => t.File)    
+    <input type="submit" class="bg-primary" style="padding: 1vh !important; border-radius: 10%; color: #fff !important;" value="Save" />
+
+    @Html.ValidationSummary(false, null, new { style="padding:1vh !important; width: fit-content; list-style-type: circle;" }, "");
+}
